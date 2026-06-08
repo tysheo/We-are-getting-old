@@ -1,0 +1,14 @@
+# Harvest pipeline for "close to you".
+# Install:  pip install -r tools/requirements.txt
+requests>=2.31
+Pillow>=10.2
+imagehash>=4.3          # perceptual-hash dedupe
+python-dotenv>=1.0      # read project-root .env
+
+# Faces (eye-based alignment via OpenCV Haar cascades — works on Python 3.13,
+# unlike mediapipe which has no 3.13 wheels).
+numpy>=1.26
+opencv-python>=4.9
+
+# Letter hunting (find glyphs hidden in archive images).
+pytesseract>=0.3.10     # also requires the Tesseract binary on PATH

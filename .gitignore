@@ -1,0 +1,22 @@
+node_modules/
+dist/
+dev.log
+.env
+
+# throwaway visual-verification scripts/output
+shot*.mjs
+shots/
+
+# Harvested assets are reproducible from the pipeline — don't commit them.
+public/assets/
+public/manifest.json
+public/CREDITS.json
+
+# Python
+__pycache__/
+*.pyc
+tools/data/
+harvest.log
+faces.log
+textures.log
+letters.log
